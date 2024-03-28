@@ -50,32 +50,40 @@ En las cuáles se encuentran:
 
 - Servlet Ciudadano
 - Servlet Turno
+
   en los cuales el método doPost --> se utiliza para crear los elementos; y el método doGet --> para traer los elementos creados
   (en el caso de ciudadado se traen también los turnos asociados a éste; y en el turno se puede ver el DNI del ciudadano asociado)
 
 - Servlet Editar Ciudadano
 - Servlet Editar Turno
+
   en los cuales el método doGet --> se utiliza para traer el elemento que se va a querer modificar; y el método doPost --> para editar dicho elemento
 
 - Servlet Eliminar Ciudadano
 - Servlet Eliminar Turno
+
   en los cuales se utiliza sólo el método doPost --> para eliminar el elemento
 
 - Servlet Filtrado Ciudadanos
 - Servlet Filtrado Turnos
+
   en los cuales se utiliza sólo el método doGet --> para traer el listado de los elementos indicados en el filtro
   (en ciudadanos podremos ver los datos de éstos y los turnos asociados y en el caso de los turnos veremos el turno y el dni del ciudadanos al que está asociado)
 
 - Clase Ciudadano
 - Clase Turno
+
   ambas con: - las annotations, atributos (en private), constructores, getters, setters, y métodos necesarios
   Entre ambas clases tenemos una relación Uno a Muchos - ya que un turno sólo puede tener asociado un ciudadano pero un ciudadano puede tener muchos turnos
+
 - Controladora
+
   están dentro de la lógica de negocio
 
 - Clase ciudadanoJpaController
 - Clase turnoJpaController
 - Controladora de Persistencia
+
   con todos los métodos crear, editar, filtrar... --> se encuentran dentro de la persistencia
 
 Para cada opción del menú se han creado métodos, cada uno con su lógica correspondiente:
